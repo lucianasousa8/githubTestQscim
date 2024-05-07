@@ -1,0 +1,236 @@
+{
+  "scimgateway": {
+    "port": 888,
+    "localhostonly": false,
+    "payloadSize": null,
+    "scim": {
+      "version": "2.0",
+      "customSchema": null,
+      "skipTypeConvert": false,
+      "usePutSoftSync": false
+    },
+    "log": {
+      "loglevel": {
+        "file": "debug",
+        "console": "error"
+      },
+      "customMasking": null
+    },
+    "auth": {
+      "basic": [
+        {
+          "username": "process.env.ldap-new-connector_BASIC_0_USERNAME",
+          "password": "process.env.ldap-new-connector_BASIC_0_PASSWORD",
+          "readOnly": false,
+          "baseEntities": []
+        }
+      ],
+      "bearerToken": [
+        {
+          "token": null,
+          "readOnly": false,
+          "baseEntities": []
+        }
+      ],
+      "bearerJwtAzure": [
+        {
+          "tenantIdGUID": null,
+          "readOnly": false,
+          "baseEntities": []
+        }
+      ],
+      "bearerJwt": [
+        {
+          "secret": null,
+          "publicKey": null,
+          "options": {
+            "issuer": null
+          },
+          "readOnly": false,
+          "baseEntities": []
+        }
+      ],
+      "bearerOAuth": [],
+      "certificate": {
+        "key": null,
+        "cert": null,
+        "ca": null,
+        "pfx": {
+          "bundle": null,
+          "password": null
+        }
+      },
+      "ipAllowList": [],
+      "emailOnError": {
+        "smtp": {
+          "enabled": false,
+          "host": null,
+          "port": 587,
+          "proxy": null,
+          "authenticate": true,
+          "username": null,
+          "password": null,
+          "sendInterval": 15,
+          "to": null,
+          "cc": null
+        }
+      }
+    }
+  },
+  "endpoint": {
+    "entity": {
+      "undefined": {
+        "baseUrls": [
+          "eth"
+        ],
+        "username": "admim",
+        "password": "123",
+        "ldap": {
+          "userBase": "raiUfopa",
+          "groupBase": "Ufopa2",
+          "userFilter": "",
+          "groupFilter": "",
+          "userNamingAttr": "coimbra",
+          "groupNamingAttr": "coimbra enterprise",
+          "userObjectClasses": [
+            "rhgeth"
+          ],
+          "groupObjectClasses": [
+            "etherh"
+          ]
+        }
+      }
+    },
+    "map": {
+      "group": {
+        "dn": {
+          "mapTo": "id",
+          "type": "string",
+          "default": "qwe"
+        },
+        "cn": {
+          "mapTo": "displayName",
+          "type": "string",
+          "default": "qwe"
+        },
+        "member": {
+          "mapTo": "members.value",
+          "type": "array",
+          "default": "qwe"
+        }
+      },
+      "user": {
+        "dn": {
+          "mapTo": "id",
+          "type": "string",
+          "default": "abc"
+        },
+        "cn": {
+          "mapTo": "userName",
+          "type": "string",
+          "default": "abc"
+        },
+        "userAccountControl": {
+          "mapTo": "active",
+          "type": "boolean",
+          "default": "abc"
+        },
+        "userPassword": {
+          "mapTo": "password",
+          "type": "string",
+          "default": "abc"
+        },
+        "memberOf": {
+          "mapTo": "groups.value",
+          "type": "array",
+          "default": "abc"
+        },
+        "givenName": {
+          "mapTo": "name.givenName",
+          "type": "string",
+          "default": "abc"
+        },
+        "sn": {
+          "mapTo": "name.familyName",
+          "type": "string",
+          "default": "abc"
+        },
+        "displayName": {
+          "mapTo": "name.formatted",
+          "type": "string",
+          "default": "abc"
+        },
+        "title": {
+          "mapTo": "title",
+          "type": "string",
+          "default": "abc"
+        },
+        "mail": {
+          "mapTo": "attributes.email.value",
+          "type": "string",
+          "default": "abc"
+        },
+        "homePhone": {
+          "mapTo": "phoneNumbers.home.value",
+          "type": "string",
+          "default": "abc"
+        },
+        "postalCode": {
+          "mapTo": "addresses.work.postalCode",
+          "type": "string",
+          "default": "abc"
+        },
+        "streetAddress": {
+          "mapTo": "addresses.work.streetAddress",
+          "type": "string",
+          "default": "abc"
+        },
+        "l": {
+          "mapTo": "addresses.work.locality",
+          "type": "string",
+          "default": "abc"
+        },
+        "st": {
+          "mapTo": "addresses.work.region",
+          "type": "string",
+          "default": "abc"
+        },
+        "co": {
+          "mapTo": "addresses.work.country",
+          "type": "string",
+          "default": "abc"
+        },
+        "description": {
+          "mapTo": "attributes.description.value",
+          "type": "string",
+          "default": "abc"
+        },
+        "lastLogonTimestamp": {
+          "mapTo": "attributes.lastLogonTimestamp.value",
+          "type": "string",
+          "default": "abc"
+        },
+        "homeDirectory": {
+          "mapTo": "attributes.homeDirectory.value",
+          "type": "string",
+          "default": "abc"
+        },
+        "homeDrive": {
+          "mapTo": "attributes.homeDrive.value",
+          "type": "string",
+          "default": "abc"
+        },
+        "telephoneNumber": {
+          "mapTo": "attributes.telephoneNumber.value",
+          "type": "string",
+          "default": "abc"
+        },
+        "physicalDeliveryOfficeName": {
+          "mapTo": "attributes.physicalDeliveryOfficeName.value",
+          "type": "string",
+          "default": "abc"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,925 @@
+{
+  "info": {
+    "name": "temp - requests",
+    "description": "Collection of all workspace requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "New Connector1111111111 - loki",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/8881/ping",
+              "host": [
+                "{{baseURL}}/8881"
+              ],
+              "path": [
+                "ping"
+              ]
+            }
+          }
+        },
+        {
+          "name": "User",
+          "item": [
+            {
+              "name": "Get users",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/users",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Get users details",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit users (all fields)",
+              "request": {
+                "method": "PUT",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit users (specific fields)",
+              "request": {
+                "method": "PATCH",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Create users",
+              "request": {
+                "method": "POST",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/users",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Delete users",
+              "request": {
+                "method": "DELETE",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Group",
+          "item": [
+            {
+              "name": "Get groups",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/groups",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "groups"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Get groups details",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit groups (all fields)",
+              "request": {
+                "method": "PUT",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit groups (specific fields)",
+              "request": {
+                "method": "PATCH",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Create groups",
+              "request": {
+                "method": "POST",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/groups",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "groups"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Delete groups",
+              "request": {
+                "method": "DELETE",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/8881/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/8881"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "New Connector - ldap",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/888/ping",
+              "host": [
+                "{{baseURL}}/888"
+              ],
+              "path": [
+                "ping"
+              ]
+            }
+          }
+        },
+        {
+          "name": "User",
+          "item": [
+            {
+              "name": "Get users",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/users",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Get users details",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit users (all fields)",
+              "request": {
+                "method": "PUT",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit users (specific fields)",
+              "request": {
+                "method": "PATCH",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Create users",
+              "request": {
+                "method": "POST",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/users",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "users"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Delete users",
+              "request": {
+                "method": "DELETE",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/users/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "users",
+                    "{{id}}"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Group",
+          "item": [
+            {
+              "name": "Get groups",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/groups",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "groups"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Get groups details",
+              "request": {
+                "method": "GET",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit groups (all fields)",
+              "request": {
+                "method": "PUT",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Edit groups (specific fields)",
+              "request": {
+                "method": "PATCH",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Create groups",
+              "request": {
+                "method": "POST",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\": \"New value\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/groups",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "groups"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Delete groups",
+              "request": {
+                "method": "DELETE",
+                "auth": {
+                  "type": "basic",
+                  "basic": {
+                    "username": "{{username}}",
+                    "password": "{{password}}"
+                  }
+                },
+                "url": {
+                  "raw": "{{baseURL}}/888/groups/{{id}}",
+                  "host": [
+                    "{{baseURL}}/888"
+                  ],
+                  "path": [
+                    "groups",
+                    "{{id}}"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "List Gateway Connectors",
+      "request": {
+        "method": "GET",
+        "auth": {
+          "type": "basic",
+          "basic": {
+            "username": "{{username}}",
+            "password": "{{password}}"
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/5000/list",
+          "host": [
+            "{{baseURL}}/5000"
+          ],
+          "path": [
+            "list"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Gateway",
+      "item": [
+        {
+          "name": "Get users",
+          "request": {
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/5000/users",
+              "host": [
+                "{{baseURL}}/5000"
+              ],
+              "path": [
+                "users"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get users details",
+          "request": {
+            "method": "GET",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/5000/users/{{id}}",
+              "host": [
+                "{{baseURL}}/5000"
+              ],
+              "path": [
+                "users",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Edit users (all fields)",
+          "request": {
+            "method": "PUT",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"userName\": \"New value\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/5000/users/{{id}}",
+              "host": [
+                "{{baseURL}}/5000"
+              ],
+              "path": [
+                "users",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Edit users (specific fields)",
+          "request": {
+            "method": "PATCH",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"userName\": \"New value\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/5000/users/{{id}}",
+              "host": [
+                "{{baseURL}}/5000"
+              ],
+              "path": [
+                "users",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create users",
+          "request": {
+            "method": "POST",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"userName\": \"New value\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/5000/users",
+              "host": [
+                "{{baseURL}}/5000"
+              ],
+              "path": [
+                "users"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete users",
+          "request": {
+            "method": "DELETE",
+            "auth": {
+              "type": "basic",
+              "basic": {
+                "username": "{{username}}",
+                "password": "{{password}}"
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/5000/users/{{id}}",
+              "host": [
+                "{{baseURL}}/5000"
+              ],
+              "path": [
+                "users",
+                "{{id}}"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
