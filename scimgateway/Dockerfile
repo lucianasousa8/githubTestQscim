@@ -26,7 +26,6 @@
   COPY --chown=node:node . .
   
   EXPOSE 8881
-  EXPOSE 888
 
   
   

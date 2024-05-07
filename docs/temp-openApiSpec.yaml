@@ -268,8 +268,6 @@ security:
 servers:
   - url: http://localhost/api/container//8881
     description: "New Connector1111111111: loki Connector"
-  - url: http://localhost/api/container//888
-    description: "New Connector: ldap Connector"
 tags:
   - name: users
     description: Users information

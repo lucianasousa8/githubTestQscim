@@ -5,13 +5,10 @@ services:
     build: ./scimgateway
     ports:
       - "8881:8881"
-      - "888:888"
     restart: always
     environment:
       loki-new-connector1111111111_BASIC_0_USERNAME: a
       loki-new-connector1111111111_BASIC_0_PASSWORD: a
-      ldap-new-connector_BASIC_0_USERNAME: rai123
-      ldap-new-connector_BASIC_0_PASSWORD: rai123
       username: luciana
     volumes:
       - data:/home/node/app/data
