@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+  <html>
+    <head>
+      <title>Form - My form</title>
+      <link rel="stylesheet" href="/styles.css" />
+    </head>
+  
+    <body>
+      <div class="page_container">
+        <div class="header">
+          <h2>My form</h2>
+        </div>
+  
+        <form class="form_container" id="form">
+        <div class="content_input" style="text-align: center;">
+    <h2>Flowers</h2>
+        <p></p>
+    </div> <div class="content_input" style="text-align: center;">
+    <h2></h2>
+        <img src=https://educasc.com.br/wp-content/uploads/2023/09/iStock-1394440950-scaled.webp alt="image"/>
+    </div> <div class="prebuilt_input">
+    <div class="form_input">
+        <p>Email</p>
+        <input id="input_email" />
+      </div>
+
+      <div class="prebuilt_internal_grid">
+        <div class="form_input">
+          <p>Type</p>
+          <select name="select" id="input_email_type">
+            <option value="work">Work</option> <option value="home">Home</option> <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form_input">
+          
+          <p>Primary</p>
+          <label class="switch">
+            <input type="checkbox" id="input_email_primary" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div> <div class="prebuilt_input">
+    <div class="form_input">
+        <p>Phone number</p>
+        <input id="input_phone" />
+      </div>
+
+      <div class="prebuilt_internal_grid">
+        <div class="form_input">
+          <p>Type</p>
+          <select name="select" id="input_phone_type">
+            <option value="mobile">Mobile</option> <option value="work">Work</option> <option value="home">Home</option> <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form_input">
+          
+          <p>Primary</p>
+          <label class="switch">
+            <input type="checkbox" id="input_phone_primary" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  
+          <button type="submit" id='submit_btn'  class="submit-btn">Submit</button>
+        </form>
+      </div>
+      <script src="../scripts.js"></script>
+      <script src="./1.js"></script>
+    </body>
+  </html>
+  
