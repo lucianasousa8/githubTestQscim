@@ -3,6 +3,8 @@ const { formatAuth } = require("../../../utils/formatAuth");
 async function createCacheFetchFunction(request) {
   try {
     let formattedURL = request.url;
+    console.log("URL:", request.url);
+
     let headers = {
       Authorization: formatAuth(request.auth),
       ...request.headers,
