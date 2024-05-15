@@ -7,7 +7,7 @@ services:
       - "8880:8880"
     restart: always
     environment:
-      mongodb-new-connector_BASIC_0_USERNAME: admin
+      mongodb-new-connector_BASIC_0_USERNAME: lucianalopes
       mongodb-new-connector_BASIC_0_PASSWORD: admin
 
       DATABASE_URL: mongodb+srv://lucianalopes:admin@cluster0.nmp3pbg.mongodb.net/qscim?

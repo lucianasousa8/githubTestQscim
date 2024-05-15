@@ -8,7 +8,7 @@ let form = document.getElementById("form");
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Basic " + btoa("admin:admin"),
+          Authorization: "Basic " + btoa("lucianalopes:admin"),
         },
       }];
   
